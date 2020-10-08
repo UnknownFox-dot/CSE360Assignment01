@@ -6,31 +6,31 @@ public class AddingMachine
   
   public AddingMachine ()
   {
-    total = 0;  // not needed - included for clarity
+    total = 0; 
   }
   
-  public int getTotal ()
+  public int getTotal ()	//returns the overall total
   {
-    return 0;
+    return total;
   }
   
-  public void add (int value)
+  public void add (int value)	//performs the add function
   {
-	  
+	  total += value;
   }
 
-  public void subtract (int value)
+  public void subtract (int value)	//performs the subtraction function
   {
-	  
+	  total -= value;
   }
 
-  public String toString ()
+  public String toString ()	//returns the operations performed
   {
     return "";
   }
 
-  public void clear()
+  public void clear()	//resets the total
   {
-	  
+	  total = 0;
   }
 }
